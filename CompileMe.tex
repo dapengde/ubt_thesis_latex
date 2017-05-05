@@ -1,0 +1,97 @@
+% Preamble %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[headsepline, twoside, openright]{scrreprt}
+% \makeindex
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage[ngerman]{babel}     %deutsche Silbentrennung	
+\usepackage[english]{babel}     %deutsche Silbentrennung	
+\usepackage[automark]{scrpage2}
+\usepackage{textcomp}
+\usepackage{verbatim}
+\usepackage{pifont}
+
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\clubpenalty=10000
+
+\usepackage[colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref}
+
+\pagestyle{headings}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{url}
+%\usepackage{cite}
+\usepackage[inner=3.5cm, outer = 3.5 cm]{geometry}
+\usepackage{graphicx}
+\usepackage{url}         	
+\usepackage{float}
+\usepackage{setspace}	
+\usepackage{subfigure}
+\usepackage{titleref}
+\usepackage[round,authoryear]{natbib}
+\numberwithin{equation}{chapter}
+\usepackage[bf]{caption2}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{booktabs} % 三线表
+\usepackage[figuresright]{rotating}
+\usepackage{multicol} %用于实现在同一页中实现不同的分栏
+\usepackage{losymbol} %添加符号列表
+%\usepackage{array} % 表格居中并且能够设置宽度
+% 压缩pdf体积
+%\pdfcompresslevel=9
+%\pdfminorversion=5
+%\pdfobjcompresslevel=3
+
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+\renewcommand{\captionfont}{\small\slshape}
+\renewcommand{\contentsname}{Contents}
+%\renewcommand{\figurename}{Abb.}
+%\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+%\makeatletter \@addtoreset{figure}{section} \makeatother
+%\renewcommand{\thetable}{\arabic{section}.\arabic{table}}
+%\makeatletter \@addtoreset{table}{section} \makeatother
+
+\parindent 0pt
+\setlength{\parskip}{1em}
+% Preamble %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}             %hier beginnt das Document 2
+
+%% -----------------------------------------------------------------------------
+%% Title page
+%% -----------------------------------------------------------------------------
+\titlehead{}
+\title{\LARGE Ecosystem-atmosphere exchange\\of carbon dioxide and water vapour\\in typical East-Asian croplands }
+\subject{\normalfont A dissertation submitted to the
+         \vspace{.5cm} \\
+         \scshape Bayreuth Graduate School of Mathematical and Natural Sciences (BAYNAT)\\
+                  University of Bayreuth
+         \vspace{1.0cm}\\
+         \normalfont to attain the academic degree of\\
+        \scshape Doctor of Natural Science (Dr. rer. nat.)}
+\author{\scshape Peng Zhao\\
+        M.Sc. Environmental Sciences
+        \vspace{.5cm} \\
+        born x xxx, 2000\\
+        in Henan, China}
+%\date{\vspace{.5cm} Bayreuth, \today}
+\date{\vspace{.5cm} Draft on \today}
+\publishers{supervised by \scshape Dr. Johannes L\"{u}ers}
+
+\maketitle
+\onehalfspacing
+\pagenumbering{roman}
+\tableofcontents
+\listofsymbols
+\newpage
+
+%% -----------------------------------------------------------------------------
+%% Contents %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\tableofcontents
+\include{Symbols}
+\include{Thesis_Zhao}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

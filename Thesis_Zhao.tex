@@ -1,0 +1,60 @@
+% Abstract %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addchap{Summary}
+clearpage
+\addchap{Zusammenfassung}
+
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Introduction %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagenumbering{arabic}
+\chapter{Introduction} %( highlight more unsolved problems)
+\chapter{Materials and Methods}
+\chapter{Results and discussions}
+\chapter{Conclusions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% References %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{zhao}	
+\bibliography{zhao}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\addchap{Appendix}
+\appendix
+\makeatletter \@addtoreset{figure}{section} \makeatother
+\makeatletter \@addtoreset{table}{section} \makeatother
+\renewcommand*{\thechapter}{\Alph{section}}
+\renewcommand\thefigure{\Alph{section}.\arabic{figure}}
+\renewcommand\thetable{\Alph{section}.\arabic{table}}
+% Appendix - tables %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Tabellen}
+%Tables are placed here.
+% Appendix - Figures %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \newpage
+% \listoffigures
+% Appendix - Tables %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \newpage
+% \listoftables
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendix - Symbols%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \newpage
+% \addchap{Symbolverzeichnis}
+% Symbols.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addchap{Acknowledgement}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Erkl\"{a}rung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addchap{Eidesstattliche Erkl\"{a}rung}
+
+\vspace{5em}
+\noindent
+Hiermit erkl\"{a}re ich eidesstattlich, dass ich die vorliegende Arbeit selbst\"{a}ndig angerfertigt habe. Die aus fremden Quellen direkt oder indirekt \"{u}bernommenen Gedanken sind als solche kenntlich gemacht. Die Arbeit wurde bisher keiner anderen Pr\"{u}fungsbeh\"{o}rde vorgelegt und auch nicht ver\"{o}ffentlicht.  Ich bin mir bewusst, dass eine unwahre Erkl\"{a}rung rechtliche Folgen haben kann.
+
+\vspace{7em}
+\noindent
+Bayreuth, den \today
+\\[2em]
+Peng Zhao
+\noindent
+\rule[-0.1cm]{5cm}{0.01cm}\\
